@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Navbar from "../components/Navbar";
 import { Link } from "react-router-dom";
+
 import "../styles/login.css";
 
 export default function Login() {
@@ -60,7 +61,9 @@ export default function Login() {
               required
             />
 
-            <span className="forgot">Esqueci-me da password</span>
+            <Link to="/reset-password" className="forgot">
+  Esqueci-me da password
+</Link>
 
             <button type="submit">Entrar</button>
           </form>
