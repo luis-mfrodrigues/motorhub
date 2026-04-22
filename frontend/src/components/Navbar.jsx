@@ -19,9 +19,9 @@ export default function Navbar() {
 
       {/* DIREITA */}
       <div style={styles.right}>
-        <Link to="">Login</Link>
+        <Link to="/">Login</Link>
         <span>|</span>
-        <span>Criar conta</span>
+        <Link to="/register">Criar conta</Link>
         <button style={styles.button}>Anunciar +</button>
       </div>
     </div>
