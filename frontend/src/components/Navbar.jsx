@@ -1,10 +1,14 @@
+import { Link } from "react-router-dom";
+import logo from "../imagens/logotipo.png";
 export default function Navbar() {
   return (
     <div style={styles.navbar}>
       {/* LOGO */}
       <div style={styles.logo}>
-        <span style={{ color: "red" }}>Motor</span>Hub
-      </div>
+  <Link to="/">
+    <img src={logo} alt="MotorHub" style={styles.logoImg} />
+  </Link>
+</div>
 
       {/* MENU */}
       <div style={styles.menu}>
@@ -15,7 +19,7 @@ export default function Navbar() {
 
       {/* DIREITA */}
       <div style={styles.right}>
-        <span>Login</span>
+        <Link to="">Login</Link>
         <span>|</span>
         <span>Criar conta</span>
         <button style={styles.button}>Anunciar +</button>
@@ -34,15 +38,17 @@ const styles = {
     borderBottom: "1px solid #ddd",
     backgroundColor: "#fff",
   },
-  logo: {
-    fontWeight: "bold",
-    fontSize: "20px",
-  },
+  logoImg: {
+  height: "40px",
+  objectFit: "contain",
+  cursor: "pointer",
+},
   menu: {
-    display: "flex",
-    gap: "30px",
-    color: "#333",
-  },
+  display: "flex",
+  gap: "30px",
+  color: "#333",
+  cursor: "pointer",
+},
   right: {
     display: "flex",
     alignItems: "center",
