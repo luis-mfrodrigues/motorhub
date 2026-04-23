@@ -87,7 +87,7 @@
 /* RIGHT (imagem) */
 .register-right {
   flex: 1;
-  background-image: url("../imagens/login.png"); /* usa a tua imagem */
+  background-image: url("../images/login.png"); /* usa a tua imagem */
   background-size: cover;
   background-position: center;
 }

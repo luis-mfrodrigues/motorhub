@@ -58,7 +58,7 @@
 /* RIGHT */
 .reset-right {
   flex: 1;
-  background-image: url("../imagens/login.png");
+  background-image: url("../images/login.png");
   background-size: cover;
   background-position: center;
 }

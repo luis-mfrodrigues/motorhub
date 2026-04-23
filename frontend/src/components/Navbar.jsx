@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
-import logo from "../imagens/logotipo.png";
+import logo from "../images/logotipo.png";
+import { FaUser } from "react-icons/fa";
 export default function Navbar() {
   return (
     <div style={styles.navbar}>
@@ -19,6 +20,9 @@ export default function Navbar() {
 
       {/* DIREITA */}
       <div style={styles.right}>
+        <div className="icon">
+  <FaUser />
+</div>
         <Link to="/">Login</Link>
         <span>|</span>
         <Link to="/register">Criar conta</Link>

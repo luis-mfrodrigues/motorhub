@@ -1,7 +1,7 @@
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import "../styles/home.css";
-import defaultImg from "../Imagens/default/default1.png";
+import defaultImg from "../images/default/default1.png";
 
 export default function Home() {
   return (

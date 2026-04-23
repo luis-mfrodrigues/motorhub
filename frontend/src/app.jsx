@@ -1,8 +1,8 @@
 import { Routes, Route } from "react-router-dom";
-import Login from "./Pages/Login";
-import Register from "./Pages/Register";
-import ResetPassword from "./Pages/ResetPassword";
-import Home from "./Pages/Home";
+import Login from "./pages/Login";
+import Register from "./pages/Register";
+import ResetPassword from "./pages/ResetPassword";
+import Home from "./pages/Home";
 
 export default function App() {
   return (
