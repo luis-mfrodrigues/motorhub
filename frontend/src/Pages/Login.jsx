@@ -24,8 +24,8 @@ export default function Login() {
       const data = await res.json();
 
       if (res.ok) {
-        setMessage("Login com sucesso!");
-      } else {
+  navigate("/home");
+} else {
         setMessage(data.message || "Erro no login");
       }
     } catch (err) {
